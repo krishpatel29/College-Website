@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBIT</title>
+    <link href='https://css.gg/profile.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>     
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            font-family: Cambria; 
+        }
+        html 
+        { 
+            background: url(images\\bg.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+        h2
+        {
+            color: rgb(59 48 185 / 90%);
+            
+        }
+        .header
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            border: 1px solid rgb(77, 77, 77);
+            background-color: rgba(116, 112, 112, 0.5);
+        }
+        .logo
+        {
+            width: 70px;
+            cursor: pointer;
+        }
+        li,a,i
+        {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 400;
+            font-size: 21px;
+            color: rgb(59 48 185 / 90%);
+            text-decoration: none;
+        }   
+        .nav_links
+        {
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav_links li
+        {
+            display: inline-block;
+            padding: 0px 20px; 
+        }
+        .nav_links li a
+        {
+            transition: all 0.3s ease 0s;
+        }
+        .nav_links li a:hover
+        {
+            color: rgb(0, 0, 0);
+            border: 1px dotted black;
+            padding: 10px;
+        }
+        .home1
+        {
+            color: rgb(0, 0, 0);
+            border: 1px dotted black;
+            padding: 10px;
+        }
+        .content1
+        {
+            background-color: rgba(116, 112, 112, 0.5);
+            font-size: 17px;
+            padding: 1mm;
+            margin-top: 20px;
+            border: 1px solid rgb(254, 254, 254);
+        }
+        .content1 h3, .content2 h3,.content3 h3, .content4 h3, .content5 h3
+        {
+            text-align: center;
+            border-bottom: 1px solid black;
+            color:black ;
+            opacity: 0.7;
+        }
+        .content2
+        {
+            background-color: rgba(116, 112, 112, 0.5);
+            font-size: 17px;
+            padding: 1mm;
+            border: 1px solid rgb(254, 254, 254);
+        }
+        iframe
+        {
+            width: 15cm;
+            height: 8cm;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid rgba(168, 180, 104,0.5);
+        }
+        .content3
+        {
+            background-color: rgba(116, 112, 112, 0.5);
+            font-size: 17px;
+            border: 1px solid rgb(254, 254, 254);
+        }
+        .content4, .content5
+        {
+            background-color: rgba(116, 112, 112, 0.5);
+            font-size: 17px;
+            border: 1px solid rgb(254, 254, 254);
+        }
+        p
+        {
+            text-align: justify;
+            color: black;
+            opacity: 0.7;
+        }
+        .photo
+        {
+            height: 70px;
+            width: 90px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        .content4 p
+        {
+            border-bottom: 4px double black;
+            padding-bottom: 10px;
+        }
+        .star
+        {
+            text-align: center;
+            size: 3px;
+        }
+        .content5_div
+        {
+            display: flex;
+            justify-content: space-between  ;
+            align-items: center;
+        }
+        .content5_div_1
+        {
+            display: inline;
+        }
+        .achievement_img
+        {
+            height: 100px;
+            width: 130px;
+            border: 5px solid royalblue;
+            cursor: pointer;
+        }
+        .content5_div_1 p
+        {
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        .footer
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+        }
+        .footer p
+        {
+            color: white ;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        @media screen and (max-width:1081px) {
+            .header
+            {
+                flex-wrap: wrap;
+            }
+        }
+        @media  screen and (max-width:769px) and (max-height:1025px) {
+            li,a,i
+            {
+                margin: 10px;
+            }
+            a.profile
+            {
+                padding-left: 313px;
+            }
+            iframe
+            {
+                width: 70%;
+            }
+            .content5_div
+            {
+                display: inline;
+            }
+            .content5_div p
+            {
+                margin-left: 310px;
+            }
+            .achievement_img
+            {
+                margin-left: 310px;
+            }
+            .content1 p ,.content2 p, .content3 p ,.content4 p
+            {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+        @media  screen and (max-width:413px) and (max-height:916px){
+            li,a,i
+            {
+                margin-left: 10px;
+                font-size: 15px;
+            }
+            .profile
+            {
+                display: none;
+            }
+            .logo
+            {
+                display: none;
+            }
+            h2
+            {
+                display: none;
+            }
+            iframe
+            {
+                width: 64%;
+            }
+            .content5_div
+            {
+                display: inline;
+            }
+            .content5_div p
+            {
+                margin-left: 124px;
+            }
+            .achievement_img
+            {
+                margin-left: 124px;
+            }
+            .content1 p ,.content2 p, .content3 p ,.content4 p
+            {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            
+        }
+        @media  screen and (max-width:391px) and (max-height:845px){
+            li,a,i
+            {
+                margin-left: 10px;
+                font-size: 15px;
+            }
+            .profile
+            {
+                display: none;
+            }
+            .logo
+            {
+                display: none;
+            }
+            h2
+            {
+                display: none;
+            }
+            iframe
+            {
+                width: 64%;
+            }
+            .content5_div
+            {
+                display: inline;
+            }
+            .content5_div p
+            {
+                margin-left: 124px;
+            }
+            .achievement_img
+            {
+                margin-left: 124px;
+            }
+            .content1 p ,.content2 p, .content3 p ,.content4 p
+            {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            
+        }
+        @media screen and (max-width:270px)
+        {
+            input
+            {
+                width: 125px;
+            }
+            label
+            {
+                left: -26px;
+            }
+            h3
+            {
+                border: none;
+                background: none;
+                margin-left: 75px;
+                margin-right: 57px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <img class="logo" src="images\\logo.png" alt="">
+            <h2>Madhuben and Bhanubhai institute</h2>
+            <ul class="nav_links">
+                <li><a title="Home Page" class="home1" href="home.html">Home</a></li>
+                <li><a title="Sign Up" href="signup.php">Sign Up</a></li>
+                <li><a title="Login Page" class="login" href="login.php">Login</a></li>
+                <li><a title="About Us" class="aboutus" href="aboutus.html">About Us</a></li>
+            </ul>
+            <a title="Profile" class="profile" href="#"><i class="gg-profile"></i></a>
+        </div>
+        <div class="content1">
+            <h3>Welcome to MBIT</h3>
+            <p>Madhuben & Bhanubhai Patel Institute of Technology (MBIT) established in 2009; contributing to society by making proficient Engineers. MBIT epitomizes the commitment of Charutar Vidya Mandal towards academia and society, the institute professes to add the technical quantum competent personnel. The institute has charted out a long-term plan to inculcate its core ideology of social welfare and thus emerge as an exemplary Utopia of academics. To achieve real Woman Empowerment, MBIT got conversion from only women to Co-Education from 2019-20. Mr. Prayasvin B. Patel, Chairman, and Managing Director, Elecon Engineering Company Limited; is the chief patron of this institute and also a president of CVM.
+
+                This institute is located in the satellite township christened New Vallabh Vidyanagar. It is a peaceful setup on a lush green belt of the region. The pledge of CVM to bring renaissance through the means of education has brought a cascading flow of colossal donations from and outside India.
+                
+                It has Computer labs with 500+ computers and laptops. It has a Wi-Fi facility for students with 48 MBPS 1:1 Internet connectivity with campus-wide Wi-fi which includes Wi-Fi enabled Hostel and FSSI Mess Facility.  It has a reading room in the library with the reprographic facility. It has advanced fire safety and an indigenously designed sanitizing unit for the safety of staff and MBIT students. New Vallabh Vidyanagar is secured</p>
+           
+        </div>
+        <div class="content2">
+            <h3>MBIT at Glance</h3>
+            <iframe src="https://www.youtube.com/embed/ig0Eiyc9WtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="content3">
+            <h3>College Working Hours: 9:00 AM to 4:30 PM</h3>
+            <p>campus with 24X7 security and CCTV Surveillance in college, as well as a hostel wherein AC rooms, are available on request. It has an Indoor-Outdoor Sports Facility for students where students can play various games like Table Tennis, Badminton, Volley Ball, Cricket, Basket Ball, Chess, Carrom, etc. It is a residential campus where principals and staff members reside.</p>
+        </div>
+        
+        <div class="content4">
+            <h3>Reviews</h3>
+            <h4>1.Dhruti Patel</h4>
+             
+            <img src="images\\photo1.jpg" alt="" class="photo">
+            <p class="star"><i class='fa fa-star' style='color: #f3da35'></i>
+                <i class='fa fa-star' style='color: #f3da35'></i>
+                <i class='fa fa-star' style='color: #f3da35'></i>
+                <i class='fa fa-star' style='color: #f3da35'></i>
+                <i class='fa fa-star' style='color: #f3da35'></i></p>
+            <p>Thank you for finding the time to share the details of your recent visit. While we are delighted to learn that you found our spacious lobby to be remarkable and our guest service to be accommodating and friendly, its unfortunate that the same cannot be said about the other aspects of your time with us. We apologize for the unwanted noise and issues with the elevator. We will keep your feedback in mind moving forward as we further enhance our guests experience and satisfaction. We hope you give us another chance. We will do our best to deliver the exceptional stay we know we can.</p>
+            <h4>2.Dhruvi Patel</h4>
+            <img src="images\\photo2.jpg" alt="" class="photo">
+            <p class="star"><i class='fa fa-star' style='color: #f3da35'></i>
+                <i class='fa fa-star' style='color: #f3da35'></i>
+                <i class='fa fa-star' style='color: #f3da35'></i>
+                <i class='fa fa-star' style='color: #f3da35'></i>
+                <i class='fa fa-star' style='color: #f3da35'></i></p>
+            <p>We found this hotel by accident and are so glad we did! We will definitely be staying here next time we,re in town. This will be our recommendation for our youth group to stay when we come next time as well.</p>
+            <h4>3.Ashish chanchlani</h4>
+            <img src="images\\photo3.jpg" alt="" class="photo">
+            <p class="star"><i class='fa fa-star' style='color: #f3da35'></i>
+                <i class='fa fa-star' style='color: #f3da35'></i>
+                <i class='fa fa-star' style='color: #f3da35'></i>
+                <i class='fa fa-star' style='color: #f3da35'></i></p>
+            <p>Thank you for your excellent review. It looks like your experience with us made your weekend trip more memorable, and we could not be happier! We are stoked to earn your recommendation. Know that our entire team would be happy to welcome you and your group back to our hotel. We hope your next visit is just around the corner, and we wish you safe travels always.</p>
+            <h4>4.Bhuvan Bam</h4>
+            <img src="images\\photo4.jpg" alt="" class="photo">
+            <p class="star"><i class='fa fa-star' style='color: #f3da35'></i>
+                <i class='fa fa-star' style='color: #f3da35'></i>
+                <i class='fa fa-star' style='color: #f3da35'></i>
+                <i class='fa fa-star' style='color: #f3da35'></i></p>
+            <p>We were in this hotel last week. Had no hot water one morning from shower and no hot water from sink last two days there. Told front desk. It seems the problem is the room faucets. Very noisy mattresses. Also shower head has a leak and some of the furniture was below standard. Hope they fix the faucet issue. I do not plan to stay there again.</p>
+        </div>
+        <div class="content5">
+            <h3>Achievements</h3>
+            <div class="content5_div">
+                <div class="content5_div_1">
+                    <p>Recent Events</p>
+                    <img class="achievement_img" src="images\\Events.jpg" alt="">
+                </div>
+                <div class="content5_div_1">
+                    <p>Awards</p>
+                    <img class="achievement_img" src="images\\award.png" alt="">
+                </div>
+                <div class="content5_div_1">
+                    <p>College Magezine</p>
+                    <img class="achievement_img" src="images\\magezine.png" alt="">
+                </div>
+                <div class="content5_div_1">
+                    <p>MBIT Brochure</p>
+                    <img class="achievement_img" src="images\\brochure.png">
+                </div>
+                <div class="content5_div_1">
+                    <p>Sports</p>
+                    <img class="achievement_img" src="images\\sports.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>©2022</p>
+            <p>Designed & Developed by <a target="_blank" href="https://instagram.com/krishpatel029?igshid=YmMyMTA2M2Y=">Krish</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+
